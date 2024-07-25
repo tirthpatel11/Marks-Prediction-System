@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Academic Evaluation System </title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="static/assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="static/assets/css/owl.css" />
+    <link rel="stylesheet" href="static/assets/css/lightbox.css" />
+    <style>
+      #page-wraper1 {
+    background: url(static/assets/images/background11.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+/* Define styles for responsive tables */
+@media screen and (max-width: 768px) {
+    .responsive-table {
+        display: none; /* Hide tables on small screens */
+    }
+    .results-section {
+        display: block; /* Display results on small screens */
+    }
+}
+
+/* Define styles for larger screens */
+@media screen and (min-width: 769px) {
+    .responsive-table {
+        display: table; /* Show tables on larger screens */
+    }
+    .results-section {
+        display: none; /* Hide results on larger screens */
+    }
+}
+/* Styling for the form dialog */
+.form-dialog {
+    border: 2px solid #333;
+    padding: 20px;
+    background-color:#46469c;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.form-dialog h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-dialog form {
+    margin: 10px 0;
+}
+
+.form-dialog h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-dialog p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* CSS to center the table within its container */
+.centered-table {
+    margin: 0 auto; /* Set left and right margins to "auto" */
+    width: 50%; /* Adjust the width as needed */
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div id="page-wraper1" >
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="static/assets/images/logo.png" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Academic Evaluation System</h4>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Models and Prediction</a></li>
+                <li><a href="#section3">Visualizations</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>copyright @Academic Evaluation System</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About</h2>
+            <div class="line-dec"></div>
+            <span>
+            Welcome to the Academic Evaluation System, an interactive web application that helps you analyze and predict student math scores based on a comprehensive dataset. Our platform leverages the power of machine learning to provide valuable insights and predictions for academic performance.</span>
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="static/assets/images/description.webp" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>DESCRIPTION</h4>
+                  <p>
+                    The Academic Evaluation System is designed to assist students, parents, and educators in understanding and predicting math scores by considering various factors that may influence a student's academic achievements.Our platform provides a comprehensive analysis of each model's performance, enabling you to choose the most suitable one for your prediction needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>KAGGLE DATASET</h4>
+                  <p>
+                    This web application utilizes a dataset sourced from Kaggle, which includes information about students' demographics, family background, and test preparation.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.kaggle.com/datasets/spscientist/students-performance-in-exams?datasetId=74977">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="static/assets/images/kaggle.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+            <div class="section-heading">
+                <h2>Model Results and Prediction</h2>
+                <div class="line-dec"></div>
+                <span
+              >We evaluate several machine learning models to predict math scores. Our platform provides a comprehensive analysis of each model's performance.Based on our model evaluations, the Linear Regression model emerges as the most accurate choice for predicting math scores. </span
+            >
+            <br>
+                <div class="responsive-table">
+                <h1>Training Set</h1>
+                <table border="3" class="responsive-table">
+                  <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>RMSE</th>
+                        <th>MSE</th>
+                        <th>MAE</th>
+                        <th>R2 Score</th>
+                    </tr>
+                   </thead> 
+                   <tbody>
+                    {% for model_result in model_results %}
+                        <tr>
+                            <td>{{ model_result.model_name }}</td>
+                            <td>{{ model_result.train_performance.rmse }}</td>
+                            <td>{{ model_result.train_performance.mse }}</td>
+                            <td>{{ model_result.train_performance.mae }}</td>
+                            <td>{{ model_result.train_performance.r2 }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+              </div>
+              <br>
+                <div class="responsive-table">
+                <h1>Testing Set </h1>
+                <table border="3">
+                  <thead>
+                    <tr>
+                        <th>Model Name</th>
+                        <th>RMSE</th>
+                        <th>MSE</th>
+                        <th>MAE</th>
+                        <th>R2 Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for model_result in model_results %}
+                        <tr>
+                            <td>{{ model_result.model_name }}</td>
+                            <td>{{ model_result.test_performance.rmse }}</td>
+                            <td>{{ model_result.test_performance.mse }}</td>
+                            <td>{{ model_result.test_performance.mae }}</td>
+                            <td>{{ model_result.test_performance.r2 }}</td>
+                        </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <div class="results-section">
+                <h1>Training Set Results</h1>
+                {% for model_result in model_results %}
+                    <div class="result-item">
+                        <h3>Model: {{ model_result.model_name }}</h3>
+                        <p>RMSE: {{ model_result.train_performance.rmse }}</p>
+                        <p>MSE: {{ model_result.train_performance.mse }}</p>
+                        <p>MAE: {{ model_result.train_performance.mae }}</p>
+                        <p>R2 Score: {{ model_result.train_performance.r2 }}</p>
+                    </div>
+                {% endfor %} 
+                <br>
+                <h1>Testing Set Results</h1>
+                {% for model_result in model_results %}
+                    <div class="result-item">
+                        <h3>Model: {{ model_result.model_name }}</h3>
+                        <p>RMSE: {{ model_result.test_performance.rmse }}</p>
+                        <p>MSE: {{ model_result.test_performance.mse }}</p>
+                        <p>MAE: {{ model_result.test_performance.mae }}</p>
+                        <p>R2 Score: {{ model_result.test_performance.r2 }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <br>
+            <h1>R2 Scores</h1>
+            <table border="3" class="centered-table">
+                <tr>
+                    <th>Model Name</th>
+                    <th>R2 Score</th>
+                </tr>
+                {% for r2_score in r2_scores.values %}
+                <tr>
+                    <td>{{ r2_score.0 }}</td>
+                    <td>{{ r2_score.1 }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <br>
+            <div class="form-dialog">
+              <h1>Prediction</h1>
+              <form method="post" id="prediction-form" >
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  <button type="submit">Predict Math Score</button>
+              </form>
+              <div id="prediction-result"></div>
+          </div>
+            </div>
+          </div>
+    </section>
+    
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Visulaizations</h2>
+            <div class="line-dec"></div>
+            <span
+              >These visuals provide insights into how different factors, such as gender, lunch, and test preparation, affect a student's performance.</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="univariate"
+                    name="isotope-filter"
+                  />
+                  <span>Univariate</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="bivariate"
+                    name="isotope-filter"
+                  />
+                  <span>Bivariate</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="multivariate"
+                    name="isotope-filter"
+                  />
+                  <span>Multivariate</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot1_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot1_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4></h4>
+                      <span>Female students tend to perform well then male students.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot2_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot2_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4></h4>
+                      <span>Standard lunch helps perform well in exams.<br>
+                        Standard lunch helps perform well in exams be it a male or a female.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot9_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot9_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4></h4>
+                      <span>In general parent's education don't help student perform well in exam.<br>
+                        2nd plot shows that parent's whose education is of associate's degree or master's degree their male child tend to perform well in exam<br>
+                        3rd plot we can see there is no effect of parent's education on female students.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                
+                <div class="isotope-item" data-type="">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot3_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot3_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4></h4>
+                      <span>Students of group A and group B tends to perform poorly in exam.<br>
+                        Students of group A and group B tends to perform poorly in exam irrespective of whether they are male or female</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot10_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot10_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>maximum score of students in all Three subjects</h4>
+                      <span>From the above three plots its clearly visible that most of the students score in between 60-80 in Maths whereas in reading and writing most of them score from 50-80</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="multivariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot4_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot4_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Multivariate analysis using pieplot</h4>
+                      <span>The number of Male and Female students is almost equal.<br>
+                        The number of students is higher in Group C.<br>
+                        The number of students who have standard lunch is greater.<br>
+                        The number of students who have not enrolled in any test preparation course is greater.<br>
+                        The number of students whose parental education is “Some College” is greater followed closely by “Associate’s Degree”.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="univariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot5_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot5_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Gender Column<br>
+                        univariate analysis ( How is distribution of Gender ? )</h4>
+                      <span>Gender has balanced data with female students are 518 (48%) and male students are 482 (52%)</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="univariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot11_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot11_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Race/ethinicity column<br>
+                        univariate analysis ( How is Group wise distribution ?)</h4>
+                      <span>Most of the student belonging from group C /group D.<br>
+                        Lowest number of students belong to groupA</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="bivariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot6_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot6_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Bivariate analysis ( Is Race/Ehnicity has any impact on student's performance ? )</h4>
+                      <span>Group E students have scored the highest marks.
+                        Group A students have scored the lowest marks.
+                        Students from a lower Socioeconomic status have a lower avg in all course subjects</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="bivariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot13_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot13_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Bivariate analysis ( Is lunch type intake has any impact on student's performance ? )</h4>
+                      <span>Students who get Standard Lunch tend to perform better than students who got free/reduced lunch</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="bivariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot7_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot7_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Bivariate analysis ( Is Test prepration course has any impact on student's performance ? )</h4>
+                      <span>Students who have completed the Test Prepration Course have scores higher in all
+                        three categories than those who haven't taken the course<</span>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="isotope-item" data-type="multivariate">
+                  <figure class="snip1321">
+                    <img
+                      src="{{ plot8_image }}"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="{{ plot8_image }}"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Multivariate analysis using pairplot</h4>
+                      <span>From the above plot it is clear that all the scores increase linearly with each other.</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/assets/js/isotope.min.js"></script>
+    <script src="static/assets/js/owl-carousel.js"></script>
+    <script src="static/assets/js/lightbox.js"></script>
+    <script src="static/assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+
+      var predictMathScoreURL = "{% url 'index' %}";
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+      $(document).ready(function () {
+        $('#prediction-form').submit(function (event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            // Serialize the form data
+            var formData = $(this).serialize();
+
+            $.ajax({
+                type: 'POST',
+                url: predictMathScoreURL, // Replace 'your_view_name' with the actual view name
+                data: formData,
+                success: function (data) {
+                    if ('predictions' in data) {
+                        // Update the result on the page
+                        $('#prediction-result').html('Predicted Math Score: ' + data.predictions['Linear Regression']);
+                    } else if ('error' in data) {
+                        // Handle form validation errors
+                        // You can display an error message here
+                    }
+                }
+            });
+        });
+    });
+    </script>
+  </body>
+</html>
